@@ -1,11 +1,11 @@
 <html>
 
 <head>
-    <title>Courses-Grades-Screen</title>
+    <title>Courses-Grades-Edit-Screen</title>
 </head>
 
 <body>
-    <table width="100%">
+    <table>
         <tr>
             <td valign="top" width="140px">
                 <ul>
@@ -97,71 +97,63 @@
                 </ul>
             </td>
             <td>
+                <select>
+                    <option selected>Speed Grader</option>
+                </select>
+                <hr width="105%" style="margin-left: 0" />
+                <h3>Assignment Name</h3>
                 <form>
-                    <select>
-                        <option>Gradebook</option>
-                        <option>Attendance</option>
-                    </select>
-                    <button type="button">Import</button>
-                    <select>
-                        <option>Export</option>
-                        <option>Import</option>
-                    </select>
-                    <button type="button">Configure</button>
-                    <br />
-                    <h3>Student Names</h3>
-                    <input type="text" placeholder="Search Students" />
-                    <h3>Assignment Names</h3>
-                    <input type="text" placeholder="Search Assignments" />
-                    <br />
-                    <br />
-                    <input type="button" value="Apply Filters" />
+                    <input type="text" value="A1 - ENV + HTML" /> <br />
+                    <br>
+                    <textarea cols="25" rows="2">This is the assignment description</textarea>
+                    <br><br>
+                    <label for="points">Points</label> <br>
+                    <input id="points" type="text" value="100" /> <br><br>
+                    <label for="assignmentgroup">Assignment Group</label> <br>
+                    <select id="assignmentgroup">
+                        <option>ASSIGNMENTS</option>
+                        <option>QUIZES</option>
+                        <option>LABS</option>
+                    </select> <br> <br>
+                    <label for="displaygrade">Display Grade as</label> <br>
+                    <select id="displaygrade">
+                        <option>Percentage</option>
+                        <option>Letter</option>
+                    </select><br><br>
+                    <label for="submissiontype">Submission Type</label> <br>
+                    <select id="submissiontype">
+                        <option>Online</option>
+                        <option>Paper Based</option>
+                    </select><br><br>
+                    <label for="entryoptions">Online Entry Options</label><br>
+            
+                    <input type="checkbox" id="checkentry"/>
+                    <label for="checkentry">Text Entry</label> <br />
+                    <input type="checkbox" id="checkurl" />
+                    <label for="checkurl">Website URL</label> <br />
+                    <input type="checkbox" id="checkrecord"/>
+                    <label for="checkrecord">Media Recordings</label> <br />
+                    <input type="checkbox" id="checkstudent" />
+                    <label for="checkstudet">Student Annotation</label> <br />
+                    <input type="checkbox" id="checkfile" />
+                    <label for="checkfile">File Uploads</label> <br><br>
+            
+                    Assign<br>
+                    <label for="assignto">Assign To</label> <br>
+                    <input id="assignto" type="text" value="Everyone" /> <br><br>
+            
+                    <label for="due">Due</label> <br>
+                    <input id="due" type="date" value="2021-01-01"/> <br><br>
+            
+                    <label for="availfrom">Available From </label> <br>
+                    <input id="availfrom" type="date" value="2021-01-01"/> <br><br>
+            
+                    <label for="until">Until</label> <br>
+                    <input id="until" type="date" value="2021-01-01"/> <br><br>
+            
+                    <a href="../screen.html"><button type="button">Cancel</button></a>
+                    <a href="../screen.html"><button type="button">Save</button></a>
                 </form>
-                <table border="1">
-                    <thead>
-                        <tr>
-                            <th width="150">Student Name</th>
-                            <th width="90">A1</th>
-                            <th width="90">A2</th>
-                            <th width="90">A3</th>
-                            <th width="90">A4</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr style="text-align: center;">
-                            <td style="text-align: left;">Sameer Ahire</td>
-                            <td>90</td>
-                            <td>98</td>
-                            <td><input type="number" min="0" max="100" value="90"
-                                    style="text-align: end; width: 50px;" /></td>
-                            <td>99</td>
-                        </tr>
-                        <tr style="text-align: center;">
-                            <td style="text-align: left;">Ajay Rocket</td>
-                            <td>92</td>
-                            <td><input type="number" min="0" max="100" value="54"
-                                    style="text-align: end; width: 50px;" /></td>
-                            <td>91</td>
-                            <td>80</td>
-                        </tr>
-                        <tr style="text-align: center;">
-                            <td style="text-align: left;">Salman Khan</td>
-                            <td>90</td>
-                            <td>98</td>
-                            <td><input type="number" min="0" max="100" value="89"
-                                    style="text-align: end; width: 50px;" /></td>
-                            <td>99</td>
-                        </tr>
-                        <tr style="text-align: center;">
-                            <td style="text-align: left;">Jack Ma</td>
-                            <td><input type="number" min="0" max="100" value="99"
-                                    style="text-align: end; width: 50px;" /></td>
-                            <td>90</td>
-                            <td>98</td>
-                            <td>99</td>
-                        </tr>
-                    </tbody>
-                </table>
             </td>
         </tr>
     </table>

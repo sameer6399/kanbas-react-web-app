@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <title>Courses-Assignments-Index</title>
+</head>
+
+<body>
+    <select>
+        <option selected>Speed Grader</option>
+    </select>
+    <hr width="27%" style="margin-left: 0" />
+    <h3>Assignment Name</h3>
+    <form>
+        <input type="text" value="A1 - ENV + HTML" /> <br />
+        <br>
+        <textarea cols="25" rows="2">This is the assignment description</textarea>
+        <br><br>
+        <label for="points">Points</label> <br>
+        <input id="points" type="text" value="100" /> <br><br>
+        <label for="assignmentgroup">Assignment Group</label> <br>
+        <select id="assignmentgroup">
+            <option>ASSIGNMENTS</option>
+            <option>QUIZES</option>
+            <option>LABS</option>
+        </select> <br> <br>
+        <label for="displaygrade">Display Grade as</label> <br>
+        <select id="displaygrade">
+            <option>Percentage</option>
+            <option>Letter</option>
+        </select><br><br>
+        <label for="submissiontype">Submission Type</label> <br>
+        <select id="submissiontype">
+            <option>Online</option>
+            <option>Paper Based</option>
+        </select><br><br>
+        <label for="entryoptions">Online Entry Options</label><br>
+
+        <input type="checkbox" id="checkentry"/>
+        <label for="checkentry">Text Entry</label> <br />
+        <input type="checkbox" id="checkurl" />
+        <label for="checkurl">Website URL</label> <br />
+        <input type="checkbox" id="checkrecord"/>
+        <label for="checkrecord">Media Recordings</label> <br />
+        <input type="checkbox" id="checkstudent" />
+        <label for="checkstudet">Student Annotation</label> <br />
+        <input type="checkbox" id="checkfile" />
+        <label for="checkfile">File Uploads</label> <br><br>
+
+        Assign<br>
+        <label for="assignto">Assign To</label> <br>
+        <input id="assignto" type="text" value="Everyone" /> <br><br>
+
+        <label for="due">Due</label> <br>
+        <input id="due" type="date" value="2021-01-01"/> <br><br>
+
+        <label for="availfrom">Available From </label> <br>
+        <input id="availfrom" type="date" value="2021-01-01"/> <br><br>
+
+        <label for="until">Until</label> <br>
+        <input id="until" type="date" value="2021-01-01"/> <br><br>
+
+        <button type="button"><a href="#">Cancel</a></button>
+        <button type="button"><a href="#">Save</a></button>
+    </form>
+</body>
+
+</html>
