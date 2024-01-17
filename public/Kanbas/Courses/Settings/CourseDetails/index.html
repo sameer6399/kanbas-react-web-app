@@ -1,0 +1,143 @@
+<html>
+
+<head>
+    <title>
+        Courses-Settings-CourseDetails-Index
+    </title>
+</head>
+
+<body>
+    <a href="#" style="margin-left: 40px;">Course Detials</a>
+    <a href="" style="margin-left: 40px;">Sections</a>
+    <a href="../Navigation/index.html" style="margin-left: 40px;">Navigation</a>
+    <a href="" style="margin-left: 40px;">Apps</a>
+    <a href="" style="margin-left: 40px;">Feature Options</a>
+    <a href="" style="margin-left: 40px;">Integrations</a> <br>
+    <hr style="width: 750px; margin-left: 0;">
+    <h2>Course Details</h2>
+    <table width="100%">
+        <tbody>
+
+            <tr style="height: 40px;">
+                <td><label for="choseimg"><b>Image:</b></label></td>
+                <td><input id="choseimg" type="file" title="Choose Image" /> </td>
+            </tr>
+            <tr style="height: 40px;">
+                <td><label><b>Name:</b></label></td>
+                <td>CS 5610 Web Development Boston</td>
+            </tr>
+            <tr style="height: 40px;">
+                <td><label><b>Course Code:</b></label></td>
+                <td>CS 5610</td>
+            </tr>
+            <tr style="height: 40px;">
+                <td><label><b>Blueprint Course:</b></label></td>
+                <td>No</td>
+            </tr>
+            <tr style="height: 40px;">
+                <td><label for="chosechk"><b>Course Template:</b></label></td>
+                <td><input disabled id="chosechk" type="checkbox" /> Enable Course as a course template
+                </td>
+            </tr>
+            <tr style="height: 40px;">
+                <td><label for="chosetime"><b>Timezone:</b></label></td>
+                <td><select id="chosetime">
+                        <option>Eastern Time (US & Canada)</option>
+                    </select> </td>
+            </tr>
+            <tr style="height: 40px;">
+                <td><label><b>SIS ID:</b></label></td>
+                <td>CS 5610 </td>
+            </tr>
+            <tr style="height: 40px;">
+                <td><label><b>Sub Account:</b></label></td>
+                <td>CS Graduate</td>
+            </tr>
+            <tr style="height: 40px;">
+                <td><label><b>Term:</b></label></td>
+                <td>CS 5610 Spring 2023 Semester</td>
+            </tr>
+            <tr style="height: 180px;">
+                <td valign="top"><label id="chosetrm"><b>Participation:</b></label></td>
+                <td><select id="chosetrm">
+                        <option>Term</option>
+                    </select><br>
+                    Course participation is limited to <b>term</b> start and end dates. <br>
+                    <label for="chsstrt"><b>Start</b></label><br>
+                    <input id="chsstrt" type="date" /><br>
+                    <label for="chsend"><b>End</b></label><br>
+                    <input id="chsend" type="date" /><br>
+                    <input type="checkbox" /> Restrict Student Viewing Course Before Term Start Date <br>
+                    <input type="checkbox" /> Restrict Student Viewing Course Before Term End Date
+                </td>
+            </tr>
+            <tr style="height: 60px;">
+                <td valign="top"><label for="chosedue"><b>Default Due Time:</b></label></td>
+                <td><select id="chosedue">
+                        <option>Account Default (11:59pm)</option>
+                    </select><br> This infulences the user interface for setting due dates. It does not
+                    change the time due for any existing assignment.</td>
+            </tr>
+            <tr style="height: 40px;">
+                <td valign="top"><label for="choselang"><b>Language:</b></label></td>
+                <td><select id="choselang">
+                        <option>Not Set (User default to English)</option>
+                    </select><br> This will override any user system languages preferences. This is only
+                    recommended for foregin language courses.</td>
+            </tr>
+            <tr style="height: 40px;">
+                <td><label><b>File Storage:</b></label></td>
+                <td>10000 Megabytes</td>
+            </tr>
+            <tr style="height: 40px;">
+                <td><label for="choselrg"><b>Large Course:</b></label></td>
+                <td><input id="choselrg" type="checkbox" /> Launch Speed Grader Filtered by Student Group.
+                </td>
+            </tr>
+            <tr style="height: 40px;">
+                <td><label for="chosegrd"><b>Grading Scheme:</b></label></td>
+                <td><input id="chosegrd" type="checkbox" /> Enable course grading scheme. </td>
+            </tr>
+            <tr style="height: 40px;">
+                <td valign="top"><label for="choselis"><b>Lisence:</b></label></td>
+                <td><select id="choselis">
+                        <option>Private Copyrighted</option>
+                    </select>❓</td>
+            </tr>
+            <tr style="height: 40px;">
+                <td><label for="chosefi"><b>File Copyright:</b></label></td>
+                <td><input id="chosefi" type="checkbox" /> Copyright and lisence information must be
+                    provided to the files before the are published. </td>
+            </tr>
+            <tr style="height: 75px;">
+                <td valign="top"><label for="chosevis"><b>Visibility:</b></label></td>
+                <td>If you need to make your course public please contact your support<br>
+                    <select id="chosevis">
+                        <option selected disabled>Course</option>
+                    </select>❓<br> <input type="checkbox" disabled /> Include this course in the public
+                    course index.
+                </td>
+            </tr>
+            <tr style="height: 40px;">
+                <td valign="top"><label for="chosefrmt"><b>Format:</b></label></td>
+                <td><select id="chosefrmt">
+                        <option>On Campus</option>
+                    </select></td>
+            </tr>
+            <tr style="height: 40px;">
+                <td><label for="chosmaster"><b>Mastery Paths:</b></label></td>
+                <td><input id="chosmaster" type="checkbox" /> Enable individual learning paths for students
+                    based on assesments. </td>
+            </tr>
+            <tr style="height: 40px;">
+                <td><label for="chosdesc"><b>Description:</b></label></td>
+                <td><textarea id="chosdesc" cols="50" rows="6"></textarea><br><a href="#">more options</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <hr style="width: 750px; margin-left: 0;">
+    <button style="margin-left: 550px;" type="button">Update Course Detials</button>
+</body>
+
+</html>
