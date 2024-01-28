@@ -3,6 +3,10 @@
     color: aqua;
 } */
 
+#back {
+    font-size: medium;
+}
+
 p#id-selector-1 {
     background-color: red;
     color: white;
