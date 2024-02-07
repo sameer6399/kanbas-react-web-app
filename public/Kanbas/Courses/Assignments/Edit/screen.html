@@ -6,12 +6,16 @@
     <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
     <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Courses-Grades-Edit-Screen</title>
 </head>
 
 <body>
     <div class="d-flex">
-        <div>
+
+        <div class="d-none d-md-flex">
             <ul class="wd-kanbas-navigation">
                 <li><a href="http://northeastern.edu" style="font-size: xxx-large;">N</a></li>
                 <li>
@@ -44,125 +48,219 @@
                 </li>
             </ul>
         </div>
-        <div>
-            <ul class="wd-navigation">
-                <li>
-                    <a href="/Kanbas/Courses/Home/screen.html">Home</a>
-                </li>
-                <li>
-                    <a href="#">Modules</a>
-                </li>
-                <li>
-                    <a href="#">Piazza</a>
-                </li>
-                <li>
-                    <a href="#">Zoom Meetings</a>
-                </li>
-                <li class="wd-active">
-                    <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
-                </li>
-                <li>
-                    <a href="#">Quizes</a>
-                </li>
-                <li>
-                    <a href="/Kanbas/Courses/Grades/screen.html">Grades</a>
-                </li>
-                <li>
-                    <a href="#">People</a>
-                </li>
-                <li>
-                    <a href="#">Panapto Video</a>
-                </li>
-                <li>
-                    <a href="#">Discussions</a>
-                </li>
-                <li>
-                    <a href="#">Announcements</a>
-                </li>
-                <li>
-                    <a href="#">Pages</a>
-                </li>
-                <li>
-                    <a href="#">Files</a>
-                </li>
-                <li>
-                    <a href="#">Rubrics</a>
-                </li>
-                <li>
-                    <a href="#">Outcomes</a>
-                </li>
-                <li>
-                    <a href="#">Collaborations</a>
-                </li>
-                <li>
-                    <a href="#">Syllabus</a>
-                </li>
-                <li>
-                    <a href="/Kanbas/Courses/Settings/CourseDetails/screen.html">Settings</a>
-                </li>
-            </ul>
+
+        <div style="width: -webkit-fill-available;">
+
+            <div>
+                <div class="d-flex flex-row p-2 justify-content-between d-md-flex d-none"
+                    style="width: -webkit-fill-available;">
+                    <div class="mx-4 d-flex align-items-center">
+                        <nav style="--bs-breadcrumb-divider: '>'; font-size: 20px;" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <i class="fa-solid fa-bars" style="color: #b52828; padding-top: 5px;"></i>
+                                <li class="breadcrumb-item"><a href="/Kanbas/Courses/Home/screen.html"
+                                        style="color: #b52828; margin-left: 30px; text-decoration: none;">CS5610.MERGED.202430</a>
+                                </li>
+                                <li class="breadcrumb-item active"><a href="/Kanbas/Courses/Assignments/screen.html"
+                                        style="color: #b52828; font-weight: 500; text-decoration: none;">
+                                        Assignments</a></li>
+                                <li class="breadcrumb-item active" style="color: #2d3b45; font-weight: 500"
+                                    aria-current="page">A1 - ENV + HTML</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="mr-4">
+                        <button type="button" class="btn btn-outline-secondary btn-sm" style="width: 130px;">
+                            <span><i class="fa-solid fa-glasses"></i></span>
+                            Student View
+                        </button>
+                    </div>
+
+                </div>
+                <hr style="margin: 0;">
+            </div>
+
+            <div class="d-flex p-2">
+
+                <div class="d-none d-md-flex">
+                    <ul class="wd-navigation">
+                        <li>
+                            <a href="/Kanbas/Courses/Home/screen.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Modules</a>
+                        </li>
+                        <li>
+                            <a href="#">Piazza</a>
+                        </li>
+                        <li>
+                            <a href="#">Zoom Meetings</a>
+                        </li>
+                        <li class="wd-active">
+                            <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
+                        </li>
+                        <li>
+                            <a href="#">Quizes</a>
+                        </li>
+                        <li>
+                            <a href="/Kanbas/Courses/Grades/screen.html">Grades</a>
+                        </li>
+                        <li>
+                            <a href="#">People</a>
+                        </li>
+                        <li>
+                            <a href="#">Panapto Video</a>
+                        </li>
+                        <li>
+                            <a href="#">Discussions</a>
+                        </li>
+                        <li>
+                            <a href="#">Announcements</a>
+                        </li>
+                        <li>
+                            <a href="#">Pages</a>
+                        </li>
+                        <li>
+                            <a href="#">Files</a>
+                        </li>
+                        <li>
+                            <a href="#">Rubrics</a>
+                        </li>
+                        <li>
+                            <a href="#">Outcomes</a>
+                        </li>
+                        <li>
+                            <a href="#">Collaborations</a>
+                        </li>
+                        <li>
+                            <a href="#">Syllabus</a>
+                        </li>
+                        <li>
+                            <a href="/Kanbas/Courses/Settings/CourseDetails/screen.html">Settings</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div style="flex-grow: 1;" class="p-2">
+                    <div class="d-flex justify-content-end p-1">
+                        <button class="btn" type="button"><i class="fa fa-check-circle text-success"></i><a
+                                style="color: green;"><b>Published</b></a></button>
+                        <button class="btn btn-secondary" type="button"><i class="fa fa-ellipsis-v"></i></button>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="row p-2">
+                            <div class="col">
+                                <p style="margin-bottom: 5px;"><b>Assignment Name</b></p>
+                                <input class="form-control" style="margin-right: 40px;" type="text"
+                                    placeholder="A1 - ENV + HTML " />
+                                <br />
+                                <textarea class="form-control" cols="25"
+                                    rows="8">This is the assignment description</textarea>
+                                <br />
+
+                            </div>
+                        </div>
+                        <div class="row p-3" style="justify-content: center;">
+                            <div class="col-2">
+                                <label for="points" style="float: right;">Points</label>
+                            </div>
+                            <div class="col-5">
+                                <input class="form-control" id="points" type="text" value="100" />
+                            </div>
+                        </div>
+                        <div class="row p-2" style="justify-content: center;">
+                            <div class="col-2">
+                                <label for="assignmentgroup" style="float: right;">Assignment Group</label>
+                            </div>
+                            <div class="col-5">
+                                <select class="form-select" id="assignmentgroup">
+                                    <option>ASSIGNMENTS</option>
+                                    <option>QUIZES</option>
+                                    <option>LABS</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row p-2" style="justify-content: center; ">
+                            <div class="col-2">
+                                <label for="displaygrade" style="float: right;">Display Grade as</label>
+                            </div>
+                            <div class="col-5">
+                                <select class="form-select" id="displaygrade">
+                                    <option>Percentage</option>
+                                    <option>Letter</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row p-2" style="justify-content: center;">
+                            <div class="col-2">
+                                <label for="submissiontype" style="float: right;">Submission Type</label>
+                            </div>
+                            <div class="col-5">
+                                <select class="form-select" id="submissiontype">
+                                    <option>Online</option>
+                                    <option>Paper Based</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row p-2" style="justify-content: center;">
+                            <div class="col-2">
+                            </div>
+                            <div class="col-5">
+                                <label><input type="checkbox" class="form-checkbox">
+                                    Do not count the submission towards the final grade</label>
+                                </input>
+                            </div>
+                        </div>
+                        <div class="row p-2" style="justify-content: center;">
+                            <div class="col-2">
+                                <label style="float: right;">Assign</label>
+                            </div>
+                            <div class="col-5 ">
+                                <div class="form-control p-4">
+                                    <label class="p-2" for="assignto"><b>Assign to</b></label>
+
+                                    <input class="form-control p-2" id="assignto" type="text" value="Everyone" />
+
+                                    <label class="p-2" for="due"><b>Due</b></label>
+                                    <input class="form-control p-2" id="due" type="date" value="2021-01-01" />
+
+                                    <div class="row p-2" style="justify-content: center; ">
+                                        <div class="col p-2">
+                                            <label for="availfrom"><b>Available From</b></label> <br>
+                                            <input class="form-control" id="availfrom" type="date" value="2021-01-01" />
+                                        </div>
+                                        <div class="col p-2">
+                                            <label for="until"><b>Unitl</b></label>
+                                            <input class="form-control" id="until" type="date" value="2021-01-01" />
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <button class="form-control btn btn-secondary">+ ADD</button>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div class="d-flex" style="justify-content: space-between;">
+                        <div>
+                            <label><input type="checkbox" class="form-checkbox">
+                               Notify users that this content has changed</label>
+                            </input>
+                        </div>
+                        <div>
+                            <a href="../screen.html"><button class="btn btn-secondary" type="button">Cancel</button></a>
+                            <a href="../screen.html"><button class="btn btn-danger" type="button">Save</button></a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
 
         </div>
-        <div>
-            <select>
-                <option selected>Speed Grader</option>
-            </select>
-            <hr style="margin-left: 0; width: 250px;" />
-            <h3>Assignment Name</h3>
-            <form>
-                <input type="text" value="A1 - ENV + HTML" /> <br />
-                <br>
-                <textarea cols="25" rows="2">This is the assignment description</textarea>
-                <br><br>
-                <label for="points">Points</label> <br>
-                <input id="points" type="text" value="100" /> <br><br>
-                <label for="assignmentgroup">Assignment Group</label> <br>
-                <select id="assignmentgroup">
-                    <option>ASSIGNMENTS</option>
-                    <option>QUIZES</option>
-                    <option>LABS</option>
-                </select> <br> <br>
-                <label for="displaygrade">Display Grade as</label> <br>
-                <select id="displaygrade">
-                    <option>Percentage</option>
-                    <option>Letter</option>
-                </select><br><br>
-                <label for="submissiontype">Submission Type</label> <br>
-                <select id="submissiontype">
-                    <option>Online</option>
-                    <option>Paper Based</option>
-                </select><br><br>
-                <label for="entryoptions">Online Entry Options</label><br>
-
-                <input type="checkbox" id="check-entry" />
-                <label for="check-entry">Text Entry</label> <br />
-                <input type="checkbox" id="check-url" />
-                <label for="check-url">Website URL</label> <br />
-                <input type="checkbox" id="check-record" />
-                <label for="check-record">Media Recordings</label> <br />
-                <input type="checkbox" id="check-student" />
-                <label for="check-student">Student Annotation</label> <br />
-                <input type="checkbox" id="check-file" />
-                <label for="check-file">File Uploads</label> <br><br>
-
-                Assign<br>
-                <label for="assignto">Assign To</label> <br>
-                <input id="assignto" type="text" value="Everyone" /> <br><br>
-
-                <label for="due">Due</label> <br>
-                <input id="due" type="date" value="2021-01-01" /> <br><br>
-
-                <label for="availfrom">Available From </label> <br>
-                <input id="availfrom" type="date" value="2021-01-01" /> <br><br>
-
-                <label for="until">Until</label> <br>
-                <input id="until" type="date" value="2021-01-01" /> <br><br>
-
-                <a href="../screen.html"><button type="button">Cancel</button></a>
-                <a href="../screen.html"><button type="button">Save</button></a>
-            </form>
-        </div>
-
+    </div>
     </div>
 </body>
 
