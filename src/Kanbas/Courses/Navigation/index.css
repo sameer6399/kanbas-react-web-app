@@ -27,3 +27,8 @@
     color: #b52828;
     text-decoration: none;
 }
+
+.wd-breadcrumb {
+    --bs-breadcrumb-divider: '>'; 
+    font-size: 20px;
+}

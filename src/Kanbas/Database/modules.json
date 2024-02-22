@@ -1,116 +1,380 @@
 [
     {
-        "_id": "M101",
+        "_id": "M1011",
         "name": "Introduction to React JS",
-        "description": "Basic principles of React JS",
+        "description": "Learn the basic principles and concepts of React JS, including components, props, and state management.",
         "course": "CS101",
         "lessons": [
             {
                 "_id": "L101",
-                "name": "History of Rocketry",
-                "description": "A brief history of rocketry and space exploration.",
+                "name": "Getting Started with React",
+                "description": "Set up a React environment and create your first React component.",
                 "module": "M101"
             },
             {
                 "_id": "L102",
-                "name": "Rocket Propulsion Fundamentals",
-                "description": "Basic principles of rocket propulsion.",
+                "name": "Components and Props",
+                "description": "Understand the concepts of React components and how to use props to pass data.",
                 "module": "M101"
             },
             {
                 "_id": "L103",
-                "name": "Rocket Engine Types",
-                "description": "Overview of different types of rocket engines.",
+                "name": "State and Lifecycle",
+                "description": "Explore React component lifecycle methods and manage component state.",
                 "module": "M101"
             }
         ]
     },
     {
-        "_id": "M102",
-        "name": "Fuel and Combustion",
-        "description": "Understanding rocket fuel, combustion processes, and efficiency.",
+        "_id": "M1012",
+        "name": "React Hooks and Effects",
+        "description": "Learn about React Hooks and how to use them to manage stateful logic and side effects.",
         "course": "CS101",
         "lessons": [
             {
+                "_id": "L104",
+                "name": "Understanding React Hooks",
+                "description": "Learn the different types of React Hooks and their usage.",
+                "module": "M102"
+            },
+            {
+                "_id": "L105",
+                "name": "Using useState Hook",
+                "description": "Explore the useState Hook to add state to functional components.",
+                "module": "M102"
+            },
+            {
+                "_id": "L106",
+                "name": "Effect Hook and Lifecycle",
+                "description": "Understand the Effect Hook and how it replaces lifecycle methods.",
+                "module": "M102"
+            }
+        ]
+    },
+    {
+        "_id": "M1013",
+        "name": "React Router",
+        "description": "Learn how to implement client-side routing in React applications using React Router.",
+        "course": "CS101",
+        "lessons": [
+            {
+                "_id": "L107",
+                "name": "Introduction to React Router",
+                "description": "Get started with React Router and set up basic routes.",
+                "module": "M103"
+            },
+            {
+                "_id": "L108",
+                "name": "Nested Routes and Route Parameters",
+                "description": "Explore nested routes and how to pass parameters to routes.",
+                "module": "M103"
+            },
+            {
+                "_id": "L109",
+                "name": "Programmatic Navigation",
+                "description": "Learn how to navigate programmatically in React applications.",
+                "module": "M103"
+            }
+        ]
+    },
+    {
+        "_id": "M1014",
+        "name": "Redux State Management",
+        "description": "Understand the principles of Redux and how to manage application state with Redux.",
+        "course": "CS101",
+        "lessons": [
+            {
+                "_id": "L110",
+                "name": "Introduction to Redux",
+                "description": "Learn the basics of Redux and its core concepts such as actions, reducers, and the store.",
+                "module": "M104"
+            },
+            {
+                "_id": "L111",
+                "name": "Working with Redux Store",
+                "description": "Explore how to set up a Redux store and dispatch actions.",
+                "module": "M104"
+            },
+            {
+                "_id": "L112",
+                "name": "Async Actions and Middleware",
+                "description": "Learn how to handle asynchronous actions in Redux using middleware like Redux Thunk.",
+                "module": "M104"
+            }
+        ]
+    },
+    {
+        "_id": "M1022",
+        "name": "Node JS Fundamentals",
+        "description": "Learn the fundamentals of Node.js, including asynchronous programming, file system operations, and web server creation.",
+        "course": "CS102",
+        "lessons": [
+            {
                 "_id": "L201",
-                "name": "Rocket Fuel",
-                "description": "Overview of different types of rocket fuels.",
+                "name": "Asynchronous Programming in Node.js",
+                "description": "Understand asynchronous programming in Node.js using callbacks, promises, and async/await.",
                 "module": "M102"
             },
             {
                 "_id": "L202",
-                "name": "Combustion Processes",
-                "description": "Understanding combustion processes and efficiency.",
+                "name": "Working with the File System",
+                "description": "Learn how to read, write, and manipulate files in Node.js.",
                 "module": "M102"
             },
             {
                 "_id": "L203",
-                "name": "Combustion Instability",
-                "description": "Understanding combustion instability and mitigation.",
+                "name": "Creating a Web Server with Node.js",
+                "description": "Use Node.js to create a simple web server and handle HTTP requests.",
                 "module": "M102"
+            }
+        ]
+    },
+    {
+        "_id": "M1023",
+        "name": "Express.js Basics",
+        "description": "Explore the basics of Express.js framework for building web applications in Node.js.",
+        "course": "CS102",
+        "lessons": [
+            {
+                "_id": "L301",
+                "name": "Setting Up Express.js",
+                "description": "Learn how to set up Express.js framework and create a basic server.",
+                "module": "M103"
+            },
+            {
+                "_id": "L302",
+                "name": "Routing in Express.js",
+                "description": "Understand routing concepts in Express.js and how to handle different HTTP requests.",
+                "module": "M103"
+            },
+            {
+                "_id": "L303",
+                "name": "Middleware in Express.js",
+                "description": "Explore middleware functions in Express.js and how to use them for request processing.",
+                "module": "M103"
+            }
+        ]
+    },
+    {
+        "_id": "M1024",
+        "name": "MongoDB Integration",
+        "description": "Learn how to integrate MongoDB with Node.js for database operations.",
+        "course": "CS102",
+        "lessons": [
+            {
+                "_id": "L401",
+                "name": "Introduction to MongoDB",
+                "description": "Understand the basics of MongoDB, including collections, documents, and CRUD operations.",
+                "module": "M104"
+            },
+            {
+                "_id": "L402",
+                "name": "Connecting to MongoDB from Node.js",
+                "description": "Learn how to connect Node.js applications to MongoDB using official MongoDB driver.",
+                "module": "M104"
+            },
+            {
+                "_id": "L403",
+                "name": "CRUD Operations with MongoDB",
+                "description": "Explore CRUD (Create, Read, Update, Delete) operations with MongoDB in Node.js applications.",
+                "module": "M104"
             }
         ]
     },
     {
         "_id": "M103",
-        "name": "Nozzle Design",
-        "description": "Principles of rocket nozzle design and performance optimization.",
-        "course": "CS101",
+        "name": "JavaScript Basics",
+        "description": "Explore the basics of JavaScript programming language, including variables, data types, functions, and control flow.",
+        "course": "CS103",
         "lessons": [
             {
                 "_id": "L301",
-                "name": "Nozzle Design",
-                "description": "Overview of different types of rocket nozzles.",
+                "name": "Variables and Data Types",
+                "description": "Understand JavaScript variables and different data types such as strings, numbers, and arrays.",
                 "module": "M103"
             },
             {
                 "_id": "L302",
-                "name": "Nozzle Performance",
-                "description": "Understanding nozzle performance and efficiency.",
+                "name": "Functions and Scope",
+                "description": "Learn about functions, function scope, and closures in JavaScript.",
                 "module": "M103"
             },
             {
                 "_id": "L303",
-                "name": "Nozzle Optimization",
-                "description": "Optimizing nozzle design for specific applications.",
+                "name": "Control Flow and Loops",
+                "description": "Explore control flow statements like if-else, switch, and different types of loops in JavaScript.",
                 "module": "M103"
             }
         ]
     },
     {
-        "_id": "M201",
-        "name": "Fundamentals of Aerodynamics",
-        "description": "Basic aerodynamic concepts and fluid dynamics principles.",
-        "course": "CS102"
+        "_id": "M104",
+        "name": "Java Fundamentals",
+        "description": "Learn the fundamentals of Java programming language, including object-oriented programming concepts, data structures, and algorithms.",
+        "course": "CS104",
+        "lessons": [
+            {
+                "_id": "L401",
+                "name": "Object-Oriented Programming Concepts",
+                "description": "Understand the principles of object-oriented programming, including classes, objects, inheritance, and polymorphism.",
+                "module": "M104"
+            },
+            {
+                "_id": "L402",
+                "name": "Data Structures in Java",
+                "description": "Explore commonly used data structures such as arrays, linked lists, stacks, queues, and trees in Java.",
+                "module": "M104"
+            },
+            {
+                "_id": "L403",
+                "name": "Algorithms and Problem Solving",
+                "description": "Learn about algorithm design techniques and solve coding problems using Java.",
+                "module": "M104"
+            }
+        ]
     },
     {
-        "_id": "M202",
-        "name": "Subsonic and Supersonic Flow",
-        "description": "Understanding subsonic and supersonic aerodynamic behaviors.",
-        "course": "CS102"
+        "_id": "M105",
+        "name": "Python Programming",
+        "description": "Explore Python programming language, including syntax, data types, control structures, and object-oriented programming.",
+        "course": "CS105",
+        "lessons": [
+            {
+                "_id": "L501",
+                "name": "Python Basics",
+                "description": "Learn the basics of Python programming language, including variables, data types, and basic operations.",
+                "module": "M105"
+            },
+            {
+                "_id": "L502",
+                "name": "Control Flow in Python",
+                "description": "Explore control flow statements like if-else, loops, and conditional expressions in Python.",
+                "module": "M105"
+            },
+            {
+                "_id": "L503",
+                "name": "Object-Oriented Programming in Python",
+                "description": "Understand object-oriented programming concepts in Python, including classes, objects, and inheritance.",
+                "module": "M105"
+            }
+        ]
     },
     {
-        "_id": "M203",
-        "name": "Aerodynamic Heating",
-        "description": "Study of aerodynamic heating and thermal protection systems.",
-        "course": "CS102"
+        "_id": "M106",
+        "name": "Intro to HTML",
+        "description": "Learn the basics of HTML and CSS for web development, including page structure, styling, and layout techniques.",
+        "course": "CS106",
+        "lessons": [
+            {
+                "_id": "L601",
+                "name": "Introduction to HTML",
+                "description": "Learn HTML tags, elements, attributes, and create basic web pages.",
+                "module": "M106"
+            },
+            {
+                "_id": "L602",
+                "name": "HTML Layout Techniques",
+                "description": "Explore different CSS layout techniques such as Flexbox and Grid for creating responsive web layouts.",
+                "module": "M106"
+            }
+        ]
     },
     {
-        "_id": "M301",
-        "name": "Spacecraft Structural Design",
-        "description": "Fundamentals of designing spacecraft structures and materials selection.",
-        "course": "CS103"
+        "_id": "M107",
+        "name": "Intro to CSS",
+        "description": "Learn the basics of HTML and CSS for web development, including page structure, styling, and layout techniques.",
+        "course": "CS107",
+        "lessons": [
+            {
+                "_id": "L701",
+                "name": "Introduction to CSS",
+                "description": "Understand CSS syntax, selectors, properties, and apply styles to HTML elements.",
+                "module": "M107"
+            },
+            {
+                "_id": "L702",
+                "name": "CSS Layout Techniques",
+                "description": "Explore different CSS layout techniques such as Flexbox and Grid for creating responsive web layouts.",
+                "module": "M107"
+            }
+        ]
     },
     {
-        "_id": "M302",
-        "name": "Orbital Mechanics",
-        "description": "Understanding orbital dynamics and mission planning.",
-        "course": "CS103"
+        "_id": "M108",
+        "name": "Bootstrap Framework",
+        "description": "Learn to use the Bootstrap framework for building responsive and mobile-first websites.",
+        "course": "CS108",
+        "lessons": [
+            {
+                "_id": "L801",
+                "name": "Getting Started with Bootstrap",
+                "description": "Set up Bootstrap in your project and understand its grid system and components.",
+                "module": "M108"
+            },
+            {
+                "_id": "L802",
+                "name": "Bootstrap Components",
+                "description": "Explore various Bootstrap components such as buttons, forms, navigation bars, and cards.",
+                "module": "M108"
+            },
+            {
+                "_id": "L803",
+                "name": "Customizing Bootstrap",
+                "description": "Customize Bootstrap styles, themes, and create custom components.",
+                "module": "M108"
+            }
+        ]
     },
     {
-        "_id": "M303",
-        "name": "Spacecraft Systems Engineering",
-        "description": "Overview of spacecraft systems and subsystems engineering.",
-        "course": "CS103"
+        "_id": "M109",
+        "name": "UI/UX Design Fundamentals",
+        "description": "Learn the fundamentals of user interface (UI) and user experience (UX) design principles and techniques.",
+        "course": "CS109",
+        "lessons": [
+            {
+                "_id": "L901",
+                "name": "Introduction to UI/UX Design",
+                "description": "Understand the importance of UI/UX design and basic design principles.",
+                "module": "M109"
+            },
+            {
+                "_id": "L902",
+                "name": "Wireframing and Prototyping",
+                "description": "Learn how to create wireframes and prototypes using design tools.",
+                "module": "M109"
+            },
+            {
+                "_id": "L903",
+                "name": "Usability Testing and User Feedback",
+                "description": "Conduct usability testing and gather user feedback to improve designs.",
+                "module": "M109"
+            }
+        ]
+    },
+    {
+        "_id": "M110",
+        "name": "MongoDB Essentials",
+        "description": "Learn the essentials of MongoDB, including document-based data modeling, CRUD operations, and query optimization.",
+        "course": "CS110",
+        "lessons": [
+            {
+                "_id": "L1001",
+                "name": "Introduction to MongoDB",
+                "description": "Understand the basics of MongoDB, including document structure, collections, and databases.",
+                "module": "M110"
+            },
+            {
+                "_id": "L1002",
+                "name": "CRUD Operations in MongoDB",
+                "description": "Perform create, read, update, and delete operations in MongoDB using the MongoDB shell and drivers.",
+                "module": "M110"
+            },
+            {
+                "_id": "L1003",
+                "name": "Querying MongoDB",
+                "description": "Learn to query MongoDB collections using MongoDB query language and aggregation pipeline.",
+                "module": "M110"
+            }
+        ]
     }
 ]

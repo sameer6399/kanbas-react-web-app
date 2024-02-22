@@ -2,7 +2,11 @@ import { courses } from "../../Kanbas/Database";
 import { Navigate, Route, Routes, useParams } from "react-router-dom";
 import CourseNavigation from "./Navigation";
 import Modules from "./Modules";
-import Breadcrumb from "./Breadcrumb";
+import Breadcrumb from "./Navigation/breadcrumb";
+import Home from "./Home";
+import Grades from "./Grades";
+import Assignments from "./Assignments";
+import AssignmentEditor from "./Assignments/Editor";
 function Courses() {
     return (
         <div>
@@ -12,18 +16,16 @@ function Courses() {
                 <div className="d-none d-md-flex">
                     <CourseNavigation />
                 </div>
-                
-                <div style={{flexGrow:"1"}}>
-                    <Routes>
-                        <Route path="/" element={<Navigate to="Home" />} />
-                        <Route path="Home" element={<h1>Home</h1>} />
-                        <Route path="Modules" element={<Modules />} />
-                        <Route path="Piazza" element={<h1>Piazza</h1>} />
-                        <Route path="Assignments" element={<h1>Assignments</h1>} />
-                        <Route path="Assignments/:assignmentId" element={<h1>Assignment Editor</h1>} />
-                        <Route path="Grades" element={<h1>Grades</h1>} />
-                    </Routes>
-                </div>
+
+                <Routes>
+                    <Route path="/" element={<Navigate to="Home" />} />
+                    <Route path="Home" element={<Home />} />
+                    <Route path="Modules" element={<Modules />} />
+                    <Route path="Piazza" element={<h1>Piazza</h1>} />
+                    <Route path="Assignments" element={<Assignments/>} />
+                    <Route path="Assignments/:assignmentId" element={<AssignmentEditor/>} />
+                    <Route path="Grades" element={<Grades/>} />
+                </Routes>
 
             </div>
 
