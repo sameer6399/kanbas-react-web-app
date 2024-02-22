@@ -1,214 +1,728 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/libs/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/Kanbas/styles.css" />
+    <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Home/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Modules/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <title>Courses-Assignments-Screen</title>
 </head>
 
 <body>
-    <table width="100%">
-        <tr>
-            <td valign="top" width="140px">
-                <ul>
-                    <li>
-                        <a href="/Kanbas/Account/Profile/screen.html">Account</a>
+
+    <div class="wd-top-nav-bar d-md-none"
+        style="display: flex; align-items: center; justify-content: space-between; background-color: #343a40;">
+
+        <div style="position: relative; z-index: 3;">
+            <div style="float: left;" class="d-flex">
+                <div>
+                    <button class="btn btn-dark" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseWidthExample" aria-expanded="true"
+                        aria-controls="collapseWidthExample">
+                        <i class="fa-solid fa-bars" style="color: #b52828"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="collapse collapse-horizontal" id="collapseWidthExample"
+                style="position: fixed; left: -10px; z-index: 2;">
+                <div class="card card-body p-2" style="width: 100vw; height: 100vh; border: none;">
+                    <li><img src="/images/canvas2.png" class="card-img-top" style="height: 150px; width: 150px;" />
+                        <button class="btn btn-secondary" style="float: right;" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseWidthExample" aria-expanded="false"
+                            aria-controls="collapseWidthExample">
+                            X
+                        </button>
                     </li>
                     <li>
-                        <a href="#">Dashboard</a>
+                        <a href="/Kanbas/Account/Profile/screen.html"
+                            style="color: #b52828; font-size: 20px; text-decoration: none;"><i class="fa fa-user-o"
+                                style="padding-right: 20px;"></i>Account</a>
                     </li>
                     <li>
-                        <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
+                        <a href="/Kanbas/Dashboard/screen.html"
+                            style="color: #b52828; font-size: 20px; text-decoration: none;"><i class="fa fa-tachometer"
+                                style="padding-right: 20px;"></i>Dashboard</a>
                     </li>
                     <li>
-                        <a href="#">Calendar</a>
+                        <a href="/Kanbas/Courses/Home/screen.html"
+                            style="color: #b52828; font-size: 20px; text-decoration: none;"><i class="fa fa-book"
+                                style="padding-right: 20px;"></i>Courses</a>
                     </li>
                     <li>
-                        <a href="#">Inbox</a>
+                        <a href="#" style="color: #b52828; font-size: 20px; text-decoration: none;"><i
+                                class="fa fa-calendar" style="padding-right: 20px;"></i>Calendar</a>
                     </li>
                     <li>
-                        <a href="#">History</a>
+                        <a href="#" style="color: #b52828; font-size: 20px; text-decoration: none;"><i
+                                class="fa fa-inbox" style="padding-right: 20px;"></i>Inbox</a>
                     </li>
                     <li>
-                        <a href="#">Studio</a>
+                        <a href="#" style="color: #b52828; font-size: 20px; text-decoration: none;"><i
+                                class="fa fa-clock-o" style="padding-right: 20px;"></i>History</a>
                     </li>
                     <li>
-                        <a href="#">Commons</a>
+                        <a href="#" style="color: #b52828; font-size: 20px; text-decoration: none;"><i
+                                class="fa fa-television" style="padding-right: 20px;"></i>Studio</a>
                     </li>
                     <li>
-                        <a href="#">Help</a>
-                    </li>
-                </ul>
-            </td>
-            <td valign="top" width="200px">
-                <ul>
-                    <li>
-                        <a href="/Kanbas/Courses/Home/screen.html">Home</a>
+                        <a href="#" style="color: #b52828; font-size: 20px; text-decoration: none;"><i
+                                class="fa fa-bars" style="padding-right: 20px;"></i>Commons</a>
                     </li>
                     <li>
-                        <a href="#">Modules</a>
+                        <a href="#" style="color: #b52828; font-size: 20px; text-decoration: none;"><i
+                                class="fa fa-question-circle-o" style="padding-right: 20px;"></i>Help</a>
                     </li>
-                    <li>
-                        <a href="#">Piazza</a>
-                    </li>
-                    <li>
-                        <a href="#">Zoom Meetings</a>
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
-                    </li>
-                    <li>
-                        <a href="#">Quizes</a>
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Courses/Grades/screen.html">Grades</a>
-                    </li>
-                    <li>
-                        <a href="#">People</a>
-                    </li>
-                    <li>
-                        <a href="#">Panapto Video</a>
-                    </li>
-                    <li>
-                        <a href="#">Discussions</a>
-                    </li>
-                    <li>
-                        <a href="#">Announcements</a>
-                    </li>
-                    <li>
-                        <a href="#">Pages</a>
-                    </li>
-                    <li>
-                        <a href="#">Files</a>
-                    </li>
-                    <li>
-                        <a href="#">Rubrics</a>
-                    </li>
-                    <li>
-                        <a href="#">Outcomes</a>
-                    </li>
-                    <li>
-                        <a href="#">Collaborations</a>
-                    </li>
-                    <li>
-                        <a href="#">Syllabus</a>
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Courses/Settings/CourseDetails/screen.html">Settings</a>
-                    </li>
-                </ul>
-            </td>
-            <td>
-                <input type="text" style="width: 12%" placeholder="Search For Assignments" />
-                <button type="button">Group</button>
-                <button type="button">Assignment</button>
-                <select>
-                    <option selected>Edit Assignment Dates</option>
-                    <option>1</option>
-                    <option>2</option>
-                </select>
-                <hr style="margin-left: 0px; width: 35%"/>
-                <h3>ASSIGNMENTS 40% of Total
-                    <select>
-                        <option>Edit</option>
-                        <option>Speed Grader</option>
-                        <option>Duplicate</option>
-                        <option>Delete</option>
-                        <option>Move To</option>
-                        <option>Send To</option>
-                        <option>Copy To</option>
-                        <option>Share to commons</option>
-                    </select>
-                </h3>
-                <ul>
-                    <li>
-                        <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A1 - ENV + HTML</a><br>
-                        <a href="#">Multiple Modules</a> | Not Available Yet
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A2 - CSS + BOOTSTRAP</a><br>
-                        <a href="#">Multiple Modules</a> | Not Available Yet
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A3 - JS + REACT</a><br>
-                        <a href="#">Multiple Modules</a> | Not Available Yet
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A4 - STATE + REDUX</a><br>
-                        <a href="#">Multiple Modules</a> | Not Available Yet
-                    </li>
-                </ul>
-                <h3>QUIZZES 10% of Total
-                    <select>
-                        <option>Edit</option>
-                        <option>Speed Grader</option>
-                        <option>Duplicate</option>
-                        <option>Delete</option>
-                        <option>Move To</option>
-                        <option>Send To</option>
-                        <option>Copy To</option>
-                        <option>Share to commons</option>
-                    </select>
-                </h3>
-                <ul>
-                    <li>
-                        <a href="#">Q1 - HTML</a><br>
-                        <a href="#">Multiple Modules</a> | Not Available Yet
-                    </li>
-                    <li>
-                        <a href="#">Q2 - CSS</a><br>
-                        <a href="#">Multiple Modules</a> | Not Available Yet
-                    </li>
-                    <li>
-                        <a href="#">Q3 - JS</a><br>
-                        <a href="#">Multiple Modules</a> | Not Available Yet
-                    </li>
-                    <li>
-                        <a href="#">Q4 - NODE</a><br>
-                        <a href="#">Multiple Modules</a> | Not Available Yet
-                    </li>
-                </ul>
-                <h3>EXAMS 20% of Total
-                    <select>
-                        <option>Edit</option>
-                        <option>Speed Grader</option>
-                        <option>Duplicate</option>
-                        <option>Delete</option>
-                        <option>Move To</option>
-                        <option>Send To</option>
-                        <option>Copy To</option>
-                        <option>Share to commons</option>
-                    </select>
-                </h3>
-                <ul>
-                    <li>
-                        <a href="#">Midterm</a><br>
-                        <a href="#">Multiple Modules</a> | Not Available Yet
-                    </li>
-                    <li>
-                        <a href="#">Finals</a><br>
-                        <a href="#">Multiple Modules</a> | Not Available Yet
-                    </li>
-                </ul>
-                <h3>PROJECT 30% of Total
-                    <select>
-                        <option>Edit</option>
-                        <option>Speed Grader</option>
-                        <option>Duplicate</option>
-                        <option>Delete</option>
-                        <option>Move To</option>
-                        <option>Send To</option>
-                        <option>Copy To</option>
-                        <option>Share to commons</option>
-                    </select>
-                </h3>
-                <ul>
-                    <li>
-                        <a href="#">Project</a><br>
-                        <a href="#">Multiple Modules</a> | Not Available Yet
-                    </li>
-                </ul>
-            </td>
-        </tr>
-    </table>
+                </div>
+            </div>
+        </div>
+
+        <span style="position: relative; text-align: center; color: white; z-index: 1;">CS5610.MERGED.202430
+            <p style="margin-bottom: 0;">Assignments</p>
+        </span>
+
+        <div style="position: relative; z-index: 2;">
+            <div style="float: left;" class="d-flex">
+                <div>
+                    <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                        aria-controls="offcanvasTop"><i class="fa-solid fa-arrow-down"
+                            style="color: #b52828"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel"
+            style="height: fit-content;">
+            <div class="offcanvas-header">
+                <h5 id="offcanvasTopLabel">Offcanvas top</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <li>
+                    <a href="/Kanbas/Courses/Home/screen.html"
+                        style="color: #b52828; font-size: 20px; text-decoration: none;">Home</a>
+                </li>
+                <li>
+                    <a href="#" style="color: #b52828; font-size: 20px; text-decoration: none;">Modules</a>
+                </li>
+                <li>
+                    <a href="#" style="color: #b52828; font-size: 20px; text-decoration: none;">Piazza</a>
+                </li>
+                <li>
+                    <a href="#" style="color: #b52828; font-size: 20px; text-decoration: none;">Zoom Meetings</a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Courses/Assignments/screen.html"
+                        style="color: #b52828; font-size: 20px; text-decoration: none;">Assignments</a>
+                </li>
+                <li>
+                    <a href="#" style="color: #b52828; font-size: 20px; text-decoration: none;">Quizes</a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Courses/Grades/screen.html"
+                        style="color: #b52828; font-size: 20px; text-decoration: none;">Grades</a>
+                </li>
+                <li>
+                    <a href="#" style="color: #b52828; font-size: 20px; text-decoration: none;">People</a>
+                </li>
+                <li>
+                    <a href="#" style="color: #b52828; font-size: 20px; text-decoration: none;">Panapto Video</a>
+                </li>
+                <li>
+                    <a href="#" style="color: #b52828; font-size: 20px; text-decoration: none;">Discussions</a>
+                </li>
+                <li>
+                    <a href="#" style="color: #b52828; font-size: 20px; text-decoration: none;">Announcements</a>
+                </li>
+                <li>
+                    <a href="#" style="color: #b52828; font-size: 20px; text-decoration: none;">Pages</a>
+                </li>
+                <li>
+                    <a href="#" style="color: #b52828; font-size: 20px; text-decoration: none;">Files</a>
+                </li>
+                <li>
+                    <a href="#" style="color: #b52828; font-size: 20px; text-decoration: none;">Rubrics</a>
+                </li>
+                <li>
+                    <a href="#" style="color: #b52828; font-size: 20px; text-decoration: none;">Outcomes</a>
+                </li>
+                <li>
+                    <a href="#" style="color: #b52828; font-size: 20px; text-decoration: none;">Collaborations</a>
+                </li>
+                <li>
+                    <a href="#" style="color: #b52828; font-size: 20px; text-decoration: none;">Syllabus</a>
+                </li>
+                <li>
+                    <a href="#" style="color: #b52828; font-size: 20px; text-decoration: none;">Settings</a>
+                </li>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="d-flex">
+
+        <div class="d-none d-md-flex">
+            <ul class="wd-kanbas-navigation">
+                <li><a href="http://northeastern.edu" style="font-size: xxx-large;">N</a></li>
+                <li>
+                    <a class="wd-account" href="/Kanbas/Account/Profile/screen.html"><i
+                            class="fa fa-user-o"></i>Account</a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Dashboard/screen.html"><i class="fa fa-tachometer"></i>Dashboard</a>
+                </li>
+                <li class="wd-active">
+                    <a href="/Kanbas/Courses/Home/screen.html"><i class="fa fa-book"></i>Courses</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-calendar"></i>Calendar</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-inbox"></i></br>Inbox</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-clock-o"></i>History</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-television"></i>Studio</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-bars"></i>Commons</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-question-circle-o"></i></br>Help</a>
+                </li>
+            </ul>
+        </div>
+
+        <div style="width: -webkit-fill-available;">
+
+            <div>
+                <div class="d-flex flex-row p-2 justify-content-between d-md-flex d-none"
+                    style="width: -webkit-fill-available;">
+                    <div class="mx-4 d-flex align-items-center">
+                        <nav style="--bs-breadcrumb-divider: '>'; font-size: 20px;" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <i class="fa-solid fa-bars" style="color: #b52828; padding-top: 5px;"></i>
+                                <li class="breadcrumb-item"><a href="/Kanbas/Courses/Home/screen.html"
+                                        style="color: #b52828; margin-left: 30px; text-decoration: none;">CS5610.MERGED.202430</a>
+                                </li>
+                                <li class="breadcrumb-item active" style="color: #2d3b45; font-weight: 500"
+                                    aria-current="page">Assignments</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="mr-4">
+                        <button type="button" class="btn btn-outline-secondary btn-sm" style="width: 130px;">
+                            <span><i class="fa-solid fa-glasses"></i></span>
+                            Student View
+                        </button>
+                    </div>
+
+                </div>
+                <hr style="margin: 0;">
+            </div>
+
+            <div class="d-flex p-2">
+
+                <div class="d-none d-md-flex">
+                    <ul class="wd-navigation">
+                        <li>
+                            <a href="/Kanbas/Courses/Home/screen.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Modules</a>
+                        </li>
+                        <li>
+                            <a href="#">Piazza</a>
+                        </li>
+                        <li>
+                            <a href="#">Zoom Meetings</a>
+                        </li>
+                        <li class="wd-active">
+                            <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
+                        </li>
+                        <li>
+                            <a href="#">Quizes</a>
+                        </li>
+                        <li>
+                            <a href="/Kanbas/Courses/Grades/screen.html">Grades</a>
+                        </li>
+                        <li>
+                            <a href="#">People</a>
+                        </li>
+                        <li>
+                            <a href="#">Panapto Video</a>
+                        </li>
+                        <li>
+                            <a href="#">Discussions</a>
+                        </li>
+                        <li>
+                            <a href="#">Announcements</a>
+                        </li>
+                        <li>
+                            <a href="#">Pages</a>
+                        </li>
+                        <li>
+                            <a href="#">Files</a>
+                        </li>
+                        <li>
+                            <a href="#">Rubrics</a>
+                        </li>
+                        <li>
+                            <a href="#">Outcomes</a>
+                        </li>
+                        <li>
+                            <a href="#">Collaborations</a>
+                        </li>
+                        <li>
+                            <a href="#">Syllabus</a>
+                        </li>
+                        <li>
+                            <a href="/Kanbas/Courses/Settings/CourseDetails/screen.html">Settings</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div style="flex-grow: 1;" class="p-2">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <input class="form-control" placeholder="Search For Assignment" type="text" />
+                        </div>
+                        <div>
+                            <button class="btn btn-outline-secondary " type="button"><i
+                                    class="fa fa-plus"></i>Group</button>
+                            <button class="btn btn-outline-danger " type="button"><i
+                                    class="fa fa-plus"></i>Assignment</button>
+                            <button class="btn btn-secondary" style="padding: 10px;" type="button"><i
+                                    class="fa fa-ellipsis-v"></i></button>
+                        </div>
+                    </div>
+
+                    <hr style="margin: 10px;">
+
+                    <div class="p-2">
+
+                        <ul class="list-group wd-modules">
+                            <li class="list-group-item">
+                                <div class="d-flex justify-content-between">
+                                    <div style="padding: 5px;">
+                                        <i class="fa fa-ellipsis-v"></i><i class="fa fa-ellipsis-v"
+                                            style="padding-right: 10px;"></i>
+                                        <button class="btn"><i class="fa fa-caret-down"
+                                                style="padding-right: 10px; padding-bottom: 5px;"></i></button>
+                                        <label><b>Assignments</b></label>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-outline-secondary p-1"
+                                            style="border-radius: 10px;border: 1px solid !important; " type="button">40%
+                                            of Total</button>
+                                        <i class="fa fa-plus" style="padding-right: 10px; padding-left: 10px;"></i>
+                                        <i class="fa fa-ellipsis-v" style="padding-right: 10px;"></i>
+                                    </div>
+                                </div>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="d-flex justify-content-start">
+                                                <div style="padding-top: 12px;">
+                                                    <button class="btn"><i class="fa fa-ellipsis-v"></i><i
+                                                            class="fa fa-ellipsis-v"
+                                                            style="padding-right: 20px;"></i></button>
+                                                    <i class="fa fa-pencil-square-o"
+                                                        style="color: green; padding-right: 20px;"></i>
+                                                </div>
+                                                <div>
+                                                    <label><b><a style="text-decoration: none; color: black;"
+                                                                href="/Kanbas/Courses/Assignments/Edit/screen.html">A1 -
+                                                                ENV + HTML</a></b></label><br />
+                                                    <a href="#" style="text-decoration: none;">Multiple Modules</a> |
+                                                    Not Available Yet
+                                                </div>
+                                            </div>
+                                            <div style="padding-top: 12px;">
+                                                <span class="float-end">
+                                                    <i class="fa fa-check-circle text-success"
+                                                        style="padding-right: 10px; color: #7BB274 !important;"></i>
+                                                    <i class="fa fa-ellipsis-v" style="padding-right: 10px;"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="d-flex justify-content-start">
+                                                <div style="padding-top: 12px;">
+                                                    <button class="btn"><i class="fa fa-ellipsis-v"></i><i
+                                                            class="fa fa-ellipsis-v"
+                                                            style="padding-right: 20px;"></i></button>
+                                                    <i class="fa fa-pencil-square-o"
+                                                        style="color: green; padding-right: 20px;"></i>
+                                                </div>
+                                                <div>
+                                                    <label><b><a style="text-decoration: none; color: black;"
+                                                                href="/Kanbas/Courses/Assignments/Edit/screen.html">A2 -
+                                                                CSS + BOOTSTRAP</a></b></label><br />
+                                                    <a href="#" style="text-decoration: none;">Multiple Modules</a> |
+                                                    Not Available Yet
+                                                </div>
+                                            </div>
+                                            <div style="padding-top: 12px;">
+                                                <span class="float-end">
+                                                    <i class="fa fa-check-circle text-success"
+                                                        style="padding-right: 10px; color: #7BB274 !important;"></i>
+                                                    <i class="fa fa-ellipsis-v" style="padding-right: 10px;"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="d-flex justify-content-start">
+                                                <div style="padding-top: 12px;">
+                                                    <button class="btn"><i class="fa fa-ellipsis-v"></i><i
+                                                            class="fa fa-ellipsis-v"
+                                                            style="padding-right: 20px;"></i></button>
+                                                    <i class="fa fa-pencil-square-o"
+                                                        style="color: green; padding-right: 20px;"></i>
+                                                </div>
+                                                <div>
+                                                    <label><b><a style="text-decoration: none; color: black;"
+                                                                href="/Kanbas/Courses/Assignments/Edit/screen.html">A3 -
+                                                                JS + REACT</a></b></label><br />
+                                                    <a href="#" style="text-decoration: none;">Multiple Modules</a> |
+                                                    Not Available Yet
+                                                </div>
+                                            </div>
+                                            <div style="padding-top: 12px;">
+                                                <span class="float-end">
+                                                    <i class="fa fa-check-circle text-success"
+                                                        style="padding-right: 10px; color: #7BB274 !important;"></i>
+                                                    <i class="fa fa-ellipsis-v" style="padding-right: 10px;"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="d-flex justify-content-start">
+                                                <div style="padding-top: 12px;">
+                                                    <button class="btn"><i class="fa fa-ellipsis-v"></i><i
+                                                            class="fa fa-ellipsis-v"
+                                                            style="padding-right: 20px;"></i></button>
+                                                    <i class="fa fa-pencil-square-o"
+                                                        style="color: green; padding-right: 20px;"></i>
+                                                </div>
+                                                <div>
+                                                    <label><b><a style="text-decoration: none; color: black;"
+                                                                href="/Kanbas/Courses/Assignments/Edit/screen.html">A4 -
+                                                                STATE + REDUX</a></b></label><br />
+                                                    <a href="#" style="text-decoration: none;">Multiple Modules</a> |
+                                                    Not Available Yet
+                                                </div>
+                                            </div>
+                                            <div style="padding-top: 12px;">
+                                                <span class="float-end">
+                                                    <i class="fa fa-check-circle text-success"
+                                                        style="padding-right: 10px; color: #7BB274 !important;"></i>
+                                                    <i class="fa fa-ellipsis-v" style="padding-right: 10px;"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </li>
+                        </ul>
+
+                        <ul class="list-group wd-modules">
+                            <li class="list-group-item">
+                                <div class="d-flex justify-content-between">
+                                    <div style="padding: 5px;">
+                                        <i class="fa fa-ellipsis-v"></i><i class="fa fa-ellipsis-v"
+                                            style="padding-right: 10px;"></i>
+                                        <button class="btn"><i class="fa fa-caret-down"
+                                                style="padding-right: 10px; padding-bottom: 5px;"></i></button>
+                                        <label><b>Quizes</b></label>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-outline-secondary p-1"
+                                            style="border-radius: 10px;border: 1px solid !important; " type="button">10%
+                                            of Total</button>
+                                        <i class="fa fa-plus" style="padding-right: 10px; padding-left: 10px;"></i>
+                                        <i class="fa fa-ellipsis-v" style="padding-right: 10px;"></i>
+                                    </div>
+                                </div>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="d-flex justify-content-start">
+                                                <div style="padding-top: 12px;">
+                                                    <button class="btn"><i class="fa fa-ellipsis-v"></i><i
+                                                            class="fa fa-ellipsis-v"
+                                                            style="padding-right: 20px;"></i></button>
+                                                    <i class="fa fa-pencil-square-o"
+                                                        style="color: green; padding-right: 20px;"></i>
+                                                </div>
+                                                <div>
+                                                    <label><b><a style="text-decoration: none; color: black;"
+                                                                href="/Kanbas/Courses/Assignments/Edit/screen.html">Q1 -
+                                                                HTML</a></b></label><br />
+                                                    <a href="#" style="text-decoration: none;">Multiple Modules</a> |
+                                                    Not Available Yet
+                                                </div>
+                                            </div>
+                                            <div style="padding-top: 12px;">
+                                                <span class="float-end">
+                                                    <i class="fa fa-check-circle text-success"
+                                                        style="padding-right: 10px; color: #7BB274 !important;"></i>
+                                                    <i class="fa fa-ellipsis-v" style="padding-right: 10px;"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="d-flex justify-content-start">
+                                                <div style="padding-top: 12px;">
+                                                    <button class="btn"><i class="fa fa-ellipsis-v"></i><i
+                                                            class="fa fa-ellipsis-v"
+                                                            style="padding-right: 20px;"></i></button>
+                                                    <i class="fa fa-pencil-square-o"
+                                                        style="color: green; padding-right: 20px;"></i>
+                                                </div>
+                                                <div>
+                                                    <label><b><a style="text-decoration: none; color: black;"
+                                                                href="/Kanbas/Courses/Assignments/Edit/screen.html">Q2 -
+                                                                CSS</a></b></label><br />
+                                                    <a href="#" style="text-decoration: none;">Multiple Modules</a> |
+                                                    Not Available Yet
+                                                </div>
+                                            </div>
+                                            <div style="padding-top: 12px;">
+                                                <span class="float-end">
+                                                    <i class="fa fa-check-circle text-success"
+                                                        style="padding-right: 10px; color: #7BB274 !important;"></i>
+                                                    <i class="fa fa-ellipsis-v" style="padding-right: 10px;"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="d-flex justify-content-start">
+                                                <div style="padding-top: 12px;">
+                                                    <button class="btn"><i class="fa fa-ellipsis-v"></i><i
+                                                            class="fa fa-ellipsis-v"
+                                                            style="padding-right: 20px;"></i></button>
+                                                    <i class="fa fa-pencil-square-o"
+                                                        style="color: green; padding-right: 20px;"></i>
+                                                </div>
+                                                <div>
+                                                    <label><b><a style="text-decoration: none; color: black;"
+                                                                href="/Kanbas/Courses/Assignments/Edit/screen.html">Q3 -
+                                                                JS</a></b></label><br />
+                                                    <a href="#" style="text-decoration: none;">Multiple Modules</a> |
+                                                    Not Available Yet
+                                                </div>
+                                            </div>
+                                            <div style="padding-top: 12px;">
+                                                <span class="float-end">
+                                                    <i class="fa fa-check-circle text-success"
+                                                        style="padding-right: 10px; color: #7BB274 !important;"></i>
+                                                    <i class="fa fa-ellipsis-v" style="padding-right: 10px;"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="d-flex justify-content-start">
+                                                <div style="padding-top: 12px;">
+                                                    <button class="btn"><i class="fa fa-ellipsis-v"></i><i
+                                                            class="fa fa-ellipsis-v"
+                                                            style="padding-right: 20px;"></i></button>
+                                                    <i class="fa fa-pencil-square-o"
+                                                        style="color: green; padding-right: 20px;"></i>
+                                                </div>
+                                                <div>
+                                                    <label><b><a style="text-decoration: none; color: black;"
+                                                                href="/Kanbas/Courses/Assignments/Edit/screen.html">Q4 -
+                                                                REACT</a></b></label><br />
+                                                    <a href="#" style="text-decoration: none;">Multiple Modules</a> |
+                                                    Not Available Yet
+                                                </div>
+                                            </div>
+                                            <div style="padding-top: 12px;">
+                                                <span class="float-end">
+                                                    <i class="fa fa-check-circle text-success"
+                                                        style="padding-right: 10px; color: #7BB274 !important;"></i>
+                                                    <i class="fa fa-ellipsis-v" style="padding-right: 10px;"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </li>
+                        </ul>
+
+                        <ul class="list-group wd-modules">
+                            <li class="list-group-item">
+                                <div class="d-flex justify-content-between">
+                                    <div style="padding: 5px;">
+                                        <i class="fa fa-ellipsis-v"></i><i class="fa fa-ellipsis-v"
+                                            style="padding-right: 10px;"></i>
+                                        <button class="btn"><i class="fa fa-caret-down"
+                                                style="padding-right: 10px; padding-bottom: 5px;"></i></button>
+                                        <label><b>Exams</b></label>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-outline-secondary p-1"
+                                            style="border-radius: 10px;border: 1px solid !important; " type="button">20%
+                                            of Total</button>
+                                        <i class="fa fa-plus" style="padding-right: 10px; padding-left: 10px;"></i>
+                                        <i class="fa fa-ellipsis-v" style="padding-right: 10px;"></i>
+                                    </div>
+                                </div>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="d-flex justify-content-start">
+                                                <div style="padding-top: 12px;">
+                                                    <button class="btn"><i class="fa fa-ellipsis-v"></i><i
+                                                            class="fa fa-ellipsis-v"
+                                                            style="padding-right: 20px;"></i></button>
+                                                    <i class="fa fa-pencil-square-o"
+                                                        style="color: green; padding-right: 20px;"></i>
+                                                </div>
+                                                <div>
+                                                    <label><b><a style="text-decoration: none; color: black;"
+                                                                href="/Kanbas/Courses/Assignments/Edit/screen.html">Mid
+                                                                Term</a></b></label><br />
+                                                    <a href="#" style="text-decoration: none;">Multiple Modules</a> |
+                                                    Not Available Yet
+                                                </div>
+                                            </div>
+                                            <div style="padding-top: 12px;">
+                                                <span class="float-end">
+                                                    <i class="fa fa-check-circle text-success"
+                                                        style="padding-right: 10px; color: #7BB274 !important;"></i>
+                                                    <i class="fa fa-ellipsis-v" style="padding-right: 10px;"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="d-flex justify-content-start">
+                                                <div style="padding-top: 12px;">
+                                                    <button class="btn"><i class="fa fa-ellipsis-v"></i><i
+                                                            class="fa fa-ellipsis-v"
+                                                            style="padding-right: 20px;"></i></button>
+                                                    <i class="fa fa-pencil-square-o"
+                                                        style="color: green; padding-right: 20px;"></i>
+                                                </div>
+                                                <div>
+                                                    <label><b><a style="text-decoration: none; color: black;"
+                                                                href="/Kanbas/Courses/Assignments/Edit/screen.html">Final
+                                                                Exam</a></b></label><br />
+                                                    <a href="#" style="text-decoration: none;">Multiple Modules</a> |
+                                                    Not Available Yet
+                                                </div>
+                                            </div>
+                                            <div style="padding-top: 12px;">
+                                                <span class="float-end">
+                                                    <i class="fa fa-check-circle text-success"
+                                                        style="padding-right: 10px; color: #7BB274 !important;"></i>
+                                                    <i class="fa fa-ellipsis-v" style="padding-right: 10px;"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <ul class="list-group wd-modules">
+                            <li class="list-group-item">
+                                <div class="d-flex justify-content-between">
+                                    <div style="padding: 5px;">
+                                        <i class="fa fa-ellipsis-v"></i><i class="fa fa-ellipsis-v"
+                                            style="padding-right: 10px;"></i>
+                                        <button class="btn"><i class="fa fa-caret-down"
+                                                style="padding-right: 10px; padding-bottom: 5px;"></i></button>
+                                        <label><b>Project</b></label>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-outline-secondary p-1"
+                                            style="border-radius: 10px;border: 1px solid !important; " type="button">30%
+                                            of Total</button>
+                                        <i class="fa fa-plus" style="padding-right: 10px; padding-left: 10px;"></i>
+                                        <i class="fa fa-ellipsis-v" style="padding-right: 10px;"></i>
+                                    </div>
+                                </div>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="d-flex justify-content-start">
+                                                <div style="padding-top: 12px;">
+                                                    <button class="btn"><i class="fa fa-ellipsis-v"></i><i
+                                                            class="fa fa-ellipsis-v"
+                                                            style="padding-right: 20px;"></i></button>
+                                                    <i class="fa fa-pencil-square-o"
+                                                        style="color: green; padding-right: 20px;"></i>
+                                                </div>
+                                                <div>
+                                                    <label><b><a style="text-decoration: none; color: black;"
+                                                                href="/Kanbas/Courses/Assignments/Edit/screen.html">Final
+                                                                Project</a></b></label><br />
+                                                    <a href="#" style="text-decoration: none;">Multiple Modules</a> |
+                                                    Not Available Yet
+                                                </div>
+                                            </div>
+                                            <div style="padding-top: 12px;">
+                                                <span class="float-end">
+                                                    <i class="fa fa-check-circle text-success"
+                                                        style="padding-right: 10px; color: #7BB274 !important;"></i>
+                                                    <i class="fa fa-ellipsis-v" style="padding-right: 10px;"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

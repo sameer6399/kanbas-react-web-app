@@ -1,0 +1,18 @@
+.wd-top-nav-bar {
+    background-color: black;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.wd-top-nav-bar div {
+    padding: 10px;
+    color: white;
+}
+
+.breadcrumb {
+    order: 1;
+}
+
+.ml-auto button {
+    order: 2;
+}
