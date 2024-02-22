@@ -98,5 +98,95 @@
         "email": "legolas@mirkwood.com",
         "dob": "2879-07-15",
         "role": "FACULTY"
+    },
+    {
+        "_id": "130",
+        "username": "dwarven_warrior",
+        "password": "gimli123",
+        "firstName": "Gimli",
+        "lastName": "Son of Gloin",
+        "email": "gimli@lonelymountain.com",
+        "dob": "2879-10-10",
+        "role": "STUDENT"
+    },
+    {
+        "_id": "131",
+        "username": "wizard_gandalf",
+        "password": "mellon",
+        "firstName": "Gandalf",
+        "lastName": "The Grey",
+        "email": "gandalf@istari.com",
+        "dob": "2774-02-10",
+        "role": "FACULTY"
+    },
+    {
+        "_id": "132",
+        "username": "hobbit_frodo",
+        "password": "ringbearer",
+        "firstName": "Frodo",
+        "lastName": "Baggins",
+        "email": "frodo@shire.com",
+        "dob": "2968-09-22",
+        "role": "STUDENT"
+    },
+    {
+        "_id": "133",
+        "username": "elf_princess",
+        "password": "arwen123",
+        "firstName": "Arwen",
+        "lastName": "Undómiel",
+        "email": "arwen@rivendell.com",
+        "dob": "2410-10-10",
+        "role": "STUDENT"
+    },
+    {
+        "_id": "134",
+        "username": "human_king",
+        "password": "aragorn123",
+        "firstName": "Aragorn",
+        "lastName": "Elessar",
+        "email": "aragorn@gondor.com",
+        "dob": "2931-03-01",
+        "role": "FACULTY"
+    },
+    {
+        "_id": "135",
+        "username": "hobbit_samwise",
+        "password": "potatoes123",
+        "firstName": "Samwise",
+        "lastName": "Gamgee",
+        "email": "samwise@shire.com",
+        "dob": "2980-04-06",
+        "role": "STUDENT"
+    },
+    {
+        "_id": "136",
+        "username": "elf_lotr",
+        "password": "celeborn123",
+        "firstName": "Celeborn",
+        "lastName": "Galadriel",
+        "email": "celeborn@lothlorien.com",
+        "dob": "2775-04-07",
+        "role": "FACULTY"
+    },
+    {
+        "_id": "137",
+        "username": "wizard_saruman",
+        "password": "istari123",
+        "firstName": "Saruman",
+        "lastName": "The White",
+        "email": "saruman@istari.com",
+        "dob": "2941-01-01",
+        "role": "FACULTY"
+    },
+    {
+        "_id": "138",
+        "username": "hobbit_pippin",
+        "password": "tuckborough123",
+        "firstName": "Peregrin",
+        "lastName": "Took",
+        "email": "pippin@tuckborough.com",
+        "dob": "2990-02-10",
+        "role": "STUDENT"
     }
 ]

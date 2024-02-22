@@ -3,7 +3,7 @@ import "./index.css"; // feel free to use the CSS from previous assignments
 
 function CourseNavigation() {
 
-    const links = ["Home", "Modules", "Piazza", "ZoomMeetings", "Assignments", "Quizes", "Grades", "People", "Panapto Video", "Discussions", "Announcements", "Pages", "Files", "Rubrics", "Outcomes", "Collaborations", "Syllabus", "Settings"];
+    const links = ["Home", "Modules", "Piazza", "Assignments", "Quizes", "Grades", "People", "Discussions", "Announcements", "Pages", "Files", "Rubrics", "Outcomes", "Collaborations", "Syllabus", "Settings"];
     const { pathname } = useLocation();
 
     return (
