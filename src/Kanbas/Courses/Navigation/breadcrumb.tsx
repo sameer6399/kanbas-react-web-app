@@ -12,7 +12,7 @@ function Breadcrumb() {
     const assignmentsIndex = pathname.indexOf("Assignments");
     
     if(currentPath === "Home") {
-        currentPath = 'Modules';
+        currentPath = 'Modules'; 
     }
 
     if (assignmentsIndex !== -1) {
