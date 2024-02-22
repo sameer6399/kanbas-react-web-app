@@ -6,12 +6,17 @@
     },
     {
         "_id": "A102",
-        "title": "Node JS Fundamentals Quiz",
+        "title": "Node JS Fundamentals Assignment",
         "course": "CS101"
     },
     {
         "_id": "A103",
-        "title": "MongoDB Integration Project",
+        "title": "MongoDB Integration Assignment",
+        "course": "CS101"
+    },
+    {
+        "_id": "A104",
+        "title": "State Management Assignment",
         "course": "CS101"
     },
     {

@@ -30,6 +30,16 @@
         "role": "STUDENT"
     },
     {
+        "_id": "130",
+        "username": "sameer_ahire",
+        "password": "sameer123",
+        "firstName": "Sameer",
+        "lastName": "Ahire",
+        "email": "sameer@ahire.com",
+        "dob": "1999-03-06",
+        "role": "STUDENT"
+    },
+    {
         "_id": "124",
         "username": "black_widow",
         "password": "romanoff123",

@@ -49,7 +49,7 @@ function Grades() {
                             return (
                                 <tr>
                                     <td style={{ textAlign: "left", padding: "15px", color: "#b52828" }} >{user?.firstName} {user?.lastName}</td>
-                                    {assignments.map((assignment) => {
+                                    {as.map((assignment) => {
                                         const grade = grades.find(
                                             (grade) => grade.student === enrollment.user && grade.assignment === assignment._id);
                                         return (<td>{grade?.grade || ""}</td>);
