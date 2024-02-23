@@ -18,7 +18,7 @@ function Breadcrumb() {
         const pathAfterAssignments = pathname.substring(assignmentsIndex + "Assignments".length + 1);
         
         let name = "";
-        const assignment = assignments.find(assignment => assignment._id === pathAfterAssignments);
+        const assignment = assignments.find(assignment => assignment._id === pathAfterAssignments && assignment.course === courseId);
         if (assignment) {
             name = assignment.title;
         }
