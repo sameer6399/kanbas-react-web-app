@@ -10,10 +10,6 @@ function Breadcrumb() {
 
     let currentPath = pathname.split(/[\s/]+/).pop();
     const assignmentsIndex = pathname.indexOf("Assignments");
-    
-    if(currentPath === "Home") {
-        currentPath = 'Modules'; 
-    }
 
     if (assignmentsIndex !== -1) {
 
