@@ -39,7 +39,7 @@ function Breadcrumb() {
                             <ol className="breadcrumb" style={{ margin: "5px" }}>
                                 <HiBars3 style={{ color: "#b52828", fontSize: "35px" }} />
                                 <li className="breadcrumb-item" style={{ marginTop: "5px" }}>
-                                    <a style={{ color: "#b52828", marginLeft: "30px", textDecoration: "none" }}>CS5610.{course?.name}.202430</a>
+                                    <label style={{ color: "#b52828", marginLeft: "30px", textDecoration: "none" }}>CS5610.{course?.name}.202430</label>
                                 </li>
                                 <li className="breadcrumb-item active" style={{ color: "#2d3b45", fontWeight: "500", marginTop: "5px" }}
                                     aria-current="page">{currentPath}</li>
