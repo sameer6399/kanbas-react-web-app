@@ -1,5 +1,5 @@
 import { useParams, useLocation, Link } from "react-router-dom";
-import { courses } from "../../Database";
+import { assignments, courses } from "../../Database";
 import { HiBars3 } from "react-icons/hi2";
 import "./index.css";
 import { FaGlasses } from "react-icons/fa";
@@ -9,19 +9,27 @@ function Breadcrumb() {
     const { pathname } = useLocation();
 
     let currentPath = pathname.split(/[\s/]+/).pop();
+    const course = courses.find((course) => course._id === courseId);
+
     const assignmentsIndex = pathname.indexOf("Assignments");
 
     if (assignmentsIndex !== -1) {
 
         const pathAfterAssignments = pathname.substring(assignmentsIndex + "Assignments".length + 1);
+        
+        let name = "";
+        const assignment = assignments.find(assignment => assignment._id === pathAfterAssignments);
+        if (assignment) {
+            name = assignment.title;
+        }
 
         if (pathAfterAssignments) {
-            currentPath = `Assignments > ${pathAfterAssignments}`;
+            currentPath = `Assignments > ${name}`;
         }
     }
 
 
-    const course = courses.find((course) => course._id === courseId);
+
     return (
         <>
             <div>
