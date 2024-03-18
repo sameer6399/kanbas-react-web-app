@@ -1,0 +1,210 @@
+[
+    {
+        "_id": "M1011",
+        "name": "Introduction to React JS",
+        "description": "Learn the basic principles and concepts of React JS, including components, props, and state management.",
+        "course": "CS101",
+        "lessons": [
+            {
+                "_id": "L101",
+                "name": "Getting Started with React",
+                "description": "Set up a React environment and create your first React component.",
+                "module": "M101"
+            },
+            {
+                "_id": "L102",
+                "name": "Components and Props",
+                "description": "Understand the concepts of React components and how to use props to pass data.",
+                "module": "M101"
+            },
+            {
+                "_id": "L103",
+                "name": "State and Lifecycle",
+                "description": "Explore React component lifecycle methods and manage component state.",
+                "module": "M101"
+            }
+        ]
+    },
+    {
+        "_id": "M1012",
+        "name": "React Hooks and Effects",
+        "description": "Learn about React Hooks and how to use them to manage stateful logic and side effects.",
+        "course": "CS101",
+        "lessons": [
+            {
+                "_id": "L104",
+                "name": "Understanding React Hooks",
+                "description": "Learn the different types of React Hooks and their usage.",
+                "module": "M102"
+            },
+            {
+                "_id": "L105",
+                "name": "Using useState Hook",
+                "description": "Explore the useState Hook to add state to functional components.",
+                "module": "M102"
+            },
+            {
+                "_id": "L106",
+                "name": "Effect Hook and Lifecycle",
+                "description": "Understand the Effect Hook and how it replaces lifecycle methods.",
+                "module": "M102"
+            }
+        ]
+    },
+    {
+        "_id": "M1013",
+        "name": "React Router",
+        "description": "Learn how to implement client-side routing in React applications using React Router.",
+        "course": "CS101",
+        "lessons": [
+            {
+                "_id": "L107",
+                "name": "Introduction to React Router",
+                "description": "Get started with React Router and set up basic routes.",
+                "module": "M103"
+            },
+            {
+                "_id": "L108",
+                "name": "Nested Routes and Route Parameters",
+                "description": "Explore nested routes and how to pass parameters to routes.",
+                "module": "M103"
+            },
+            {
+                "_id": "L109",
+                "name": "Programmatic Navigation",
+                "description": "Learn how to navigate programmatically in React applications.",
+                "module": "M103"
+            }
+        ]
+    },
+    {
+        "_id": "M1014",
+        "name": "Redux State Management",
+        "description": "Understand the principles of Redux and how to manage application state with Redux.",
+        "course": "CS101",
+        "lessons": [
+            {
+                "_id": "L110",
+                "name": "Introduction to Redux",
+                "description": "Learn the basics of Redux and its core concepts such as actions, reducers, and the store.",
+                "module": "M104"
+            },
+            {
+                "_id": "L111",
+                "name": "Working with Redux Store",
+                "description": "Explore how to set up a Redux store and dispatch actions.",
+                "module": "M104"
+            },
+            {
+                "_id": "L112",
+                "name": "Async Actions and Middleware",
+                "description": "Learn how to handle asynchronous actions in Redux using middleware like Redux Thunk.",
+                "module": "M104"
+            }
+        ]
+    },
+    {
+        "_id": "M1022",
+        "name": "Node JS Fundamentals",
+        "description": "Learn the fundamentals of Node.js, including asynchronous programming, file system operations, and web server creation.",
+        "course": "CS102",
+        "lessons": [
+            {
+                "_id": "L201",
+                "name": "Asynchronous Programming in Node.js",
+                "description": "Understand asynchronous programming in Node.js using callbacks, promises, and async/await.",
+                "module": "M102"
+            },
+            {
+                "_id": "L202",
+                "name": "Working with the File System",
+                "description": "Learn how to read, write, and manipulate files in Node.js.",
+                "module": "M102"
+            },
+            {
+                "_id": "L203",
+                "name": "Creating a Web Server with Node.js",
+                "description": "Use Node.js to create a simple web server and handle HTTP requests.",
+                "module": "M102"
+            }
+        ]
+    },
+    {
+        "_id": "M1023",
+        "name": "Express.js Basics",
+        "description": "Explore the basics of Express.js framework for building web applications in Node.js.",
+        "course": "CS102",
+        "lessons": [
+            {
+                "_id": "L301",
+                "name": "Setting Up Express.js",
+                "description": "Learn how to set up Express.js framework and create a basic server.",
+                "module": "M103"
+            },
+            {
+                "_id": "L302",
+                "name": "Routing in Express.js",
+                "description": "Understand routing concepts in Express.js and how to handle different HTTP requests.",
+                "module": "M103"
+            },
+            {
+                "_id": "L303",
+                "name": "Middleware in Express.js",
+                "description": "Explore middleware functions in Express.js and how to use them for request processing.",
+                "module": "M103"
+            }
+        ]
+    },
+    {
+        "_id": "M1024",
+        "name": "MongoDB Integration",
+        "description": "Learn how to integrate MongoDB with Node.js for database operations.",
+        "course": "CS102",
+        "lessons": [
+            {
+                "_id": "L401",
+                "name": "Introduction to MongoDB",
+                "description": "Understand the basics of MongoDB, including collections, documents, and CRUD operations.",
+                "module": "M104"
+            },
+            {
+                "_id": "L402",
+                "name": "Connecting to MongoDB from Node.js",
+                "description": "Learn how to connect Node.js applications to MongoDB using official MongoDB driver.",
+                "module": "M104"
+            },
+            {
+                "_id": "L403",
+                "name": "CRUD Operations with MongoDB",
+                "description": "Explore CRUD (Create, Read, Update, Delete) operations with MongoDB in Node.js applications.",
+                "module": "M104"
+            }
+        ]
+    },
+    {
+        "_id": "M103",
+        "name": "JavaScript Basics",
+        "description": "Explore the basics of JavaScript programming language, including variables, data types, functions, and control flow.",
+        "course": "CS103",
+        "lessons": [
+            {
+                "_id": "L301",
+                "name": "Variables and Data Types",
+                "description": "Understand JavaScript variables and different data types such as strings, numbers, and arrays.",
+                "module": "M103"
+            },
+            {
+                "_id": "L302",
+                "name": "Functions and Scope",
+                "description": "Learn about functions, function scope, and closures in JavaScript.",
+                "module": "M103"
+            },
+            {
+                "_id": "L303",
+                "name": "Control Flow and Loops",
+                "description": "Explore control flow statements like if-else, switch, and different types of loops in JavaScript.",
+                "module": "M103"
+            }
+        ]
+    }
+]
