@@ -7,7 +7,10 @@ import Home from "./Home";
 import Grades from "./Grades";
 import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/Editor";
-function Courses() {
+function Courses({ courses }: { courses: any[]; }) {
+    const { courseId } = useParams();
+    const course = courses.find((course) => course._id === courseId);
+
     return (
         <div>
             <h1><Breadcrumb /></h1>
@@ -22,9 +25,9 @@ function Courses() {
                     <Route path="Home" element={<Home />} />
                     <Route path="Modules" element={<Modules />} />
                     <Route path="Piazza" element={<h1>Piazza</h1>} />
-                    <Route path="Assignments" element={<Assignments/>} />
-                    <Route path="Assignments/:assignmentId" element={<AssignmentEditor/>} />
-                    <Route path="Grades" element={<Grades/>} />
+                    <Route path="Assignments" element={<Assignments />} />
+                    <Route path="Assignments/:assignmentId" element={<AssignmentEditor />} />
+                    <Route path="Grades" element={<Grades />} />
                 </Routes>
 
             </div>

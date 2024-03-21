@@ -3,6 +3,7 @@ import { assignments, courses } from "../../Database";
 import { HiBars3 } from "react-icons/hi2";
 import "./index.css";
 import { FaGlasses } from "react-icons/fa";
+import { current } from "@reduxjs/toolkit";
 
 function Breadcrumb() {
     const { courseId } = useParams();
@@ -27,8 +28,6 @@ function Breadcrumb() {
             currentPath = `Assignments > ${name}`;
         }
     }
-
-
 
     return (
         <>
