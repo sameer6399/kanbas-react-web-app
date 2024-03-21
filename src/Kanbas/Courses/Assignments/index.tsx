@@ -7,9 +7,9 @@ import {
     deleteAssignment,
     setAssignment,
 } from "./assignmentsReducer";
-import { KanbasState } from "../../store";
 import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
+import { KanbasState } from "../../store";
 
 function Assignments() {
     const { courseId } = useParams();

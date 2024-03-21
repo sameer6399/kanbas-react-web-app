@@ -8,6 +8,12 @@ function Dashboard({ courses, course, setCourse, addNewCourse,
     addNewCourse: () => void; deleteCourse: (course: any) => void;
     updateCourse: () => void; }) {
 
+    let image = "canvas.png";
+
+    if (course.image !== undefined) {
+        image = course.image;
+    }
+
     // const [courses, setCourses] = useState(db.courses);
     // const [course, setCourse] = useState({
     //     _id: "0", name: "New Course", number: "New Number",
@@ -64,7 +70,7 @@ function Dashboard({ courses, course, setCourse, addNewCourse,
                 {courses.map((course) => (
                     <div key={course._id} className="wd-adjust" style={{ width: 300 }}>
                         <div className="card">
-                            <img src={`./images/${course.image}`} className="card-img-top"
+                            <img src={`./images/${image}`} className="card-img-top"
                                 style={{ height: 130 }} />
                             <div className="card-body">
                                 <Link className="card-title" to={`/Kanbas/Courses/${course._id}/Home`}

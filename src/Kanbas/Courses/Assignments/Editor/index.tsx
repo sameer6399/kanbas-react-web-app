@@ -2,8 +2,8 @@ import react, { useEffect } from 'react';
 import { useNavigate, useParams, Link } from "react-router-dom";
 import { FaCheckCircle, FaEllipsisV } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
-import { KanbasState } from "../../../store";
 import { addAssignment, setAssignment, updateAssignment } from "../assignmentsReducer";
+import { KanbasState } from '../../../store';
 
 
 function AssignmentEditor() {
@@ -17,6 +17,7 @@ function AssignmentEditor() {
 
     const assignmentList = useSelector((state: KanbasState) =>
         state.assignmentsReducer.assignments);
+    
     const assignment = useSelector((state: KanbasState) =>
         state.assignmentsReducer.assignment);
     const dispatch = useDispatch();
@@ -72,7 +73,7 @@ function AssignmentEditor() {
                             onChange={(e) => dispatch(setAssignment({
                                 ...assignment, description: e.target.value
                             }))}
-                            rows={8}>This is the assignment description</textarea>
+                            rows={8} value={assignment?.description}></textarea>
                         <br />
 
                     </div>
@@ -86,7 +87,7 @@ function AssignmentEditor() {
                     <div className="col-5">
                         <input className="form-control" onChange={(e) => dispatch(setAssignment({
                             ...assignment, points: e.target.value
-                        }))} id="points" type="text" value="100" />
+                        }))} id="points" type="text" value={assignment?.points} />
                     </div>
                 </div>
                 <div className="row p-2" style={{ justifyContent: "center" }}>
@@ -146,7 +147,7 @@ function AssignmentEditor() {
                                 onChange={(e) => dispatch(setAssignment({
                                     ...assignment, dueDate: e.target.value
                                 }))}
-                                id="due" type="date" value="2021-01-01" />
+                                id="due" type="date" value={assignment?.dueDate} />
 
                             <div className="row p-2" style={{ justifyContent: "center" }}>
                                 <div className="col p-2">
@@ -155,7 +156,7 @@ function AssignmentEditor() {
                                         onChange={(e) => dispatch(setAssignment({
                                             ...assignment, availableFromDate: e.target.value
                                         }))}
-                                        id="availfrom" type="date" value="2021-01-01" />
+                                        id="availfrom" type="date" value={assignment?.availableFromDate} />
                                 </div>
                                 <div className="col p-2">
                                     <label htmlFor="until"><b>Until</b></label>
@@ -163,7 +164,7 @@ function AssignmentEditor() {
                                         onChange={(e) => dispatch(setAssignment({
                                             ...assignment, availableUntilDate: e.target.value
                                         }))}
-                                        id="until" type="date" value="2021-01-01" />
+                                        id="until" type="date" value={assignment?.availableUntilDate} />
                                 </div>
                             </div>
 

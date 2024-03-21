@@ -4,8 +4,9 @@ import Dashboard from "./Dashboard";
 import Courses from "./Courses";
 import { useState } from "react";
 import * as db from "./Database";
-import store from "./store";
 import { Provider } from "react-redux";
+import store from "./store";
+import FloatingNav from "./Courses/Navigation/floatingNav";
 
 function Kanbas() {
     const [courses, setCourses] = useState<any[]>(db.courses);
@@ -34,7 +35,7 @@ function Kanbas() {
     return (
         <Provider store={store}>
             <div className="d-flex">
-
+                
                 <div className="d-none d-md-flex">
                     <KanbasNavigation />
                 </div>

@@ -7,12 +7,17 @@ import Home from "./Home";
 import Grades from "./Grades";
 import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/Editor";
+import FloatingNav from "./Navigation/floatingNav";
+
 function Courses({ courses }: { courses: any[]; }) {
     const { courseId } = useParams();
     const course = courses.find((course) => course._id === courseId);
 
     return (
         <div>
+            <div className="wd-top-nav-bar d-md-none" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', backgroundColor: '#343a40' }}>
+                <FloatingNav />
+            </div>
             <h1><Breadcrumb /></h1>
 
             <div className="d-flex p-2">
