@@ -78,8 +78,6 @@ function AssignmentEditor() {
 
                     </div>
                 </div>
-
-
                 <div className="row p-3" style={{ justifyContent: "center" }}>
                     <div className="col-2">
                         <label htmlFor="points" style={{ float: "right" }}>Points</label>
@@ -173,7 +171,6 @@ function AssignmentEditor() {
                     </div>
                 </div>
                 <hr />
-
                 <div className="d-flex" style={{ justifyContent: "space-between" }}>
                     <div>
                         <label><input type="checkbox" className="form-checkbox" style={{ marginRight: "5px" }} />
@@ -189,10 +186,7 @@ function AssignmentEditor() {
                         </Link>
                     </div>
                 </div>
-
-
             </div>
-
 
         </div >
     );

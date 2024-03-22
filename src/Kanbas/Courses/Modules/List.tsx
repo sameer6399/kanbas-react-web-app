@@ -20,38 +20,6 @@ function ModuleList() {
         state.modulesReducer.module);
     const dispatch = useDispatch();
 
-    // const [moduleList, setModuleList] = useState<any[]>(modules);
-    // const [module, setModule] = useState({
-    //     _id: "",
-    //     name: "New Module",
-    //     description: "New Description",
-    //     course: courseId,
-    // });
-    // const addModule = (module: any) => {
-    //     const newModule = {
-    //         ...module,
-    //         _id: new Date().getTime().toString()
-    //     };
-    //     const newModuleList = [newModule, ...moduleList];
-    //     setModuleList(newModuleList);
-    // };
-    // const deleteModule = (moduleId: string) => {
-    //     const newModuleList = moduleList.filter(
-    //         (module) => module._id !== moduleId);
-    //     setModuleList(newModuleList);
-    // };
-    // const updateModule = () => {
-    //     const newModuleList = moduleList.map((m) => {
-    //         if (m._id === module._id) {
-    //             return module;
-    //         } else {
-    //             return m;
-    //         }
-    //     });
-    //     setModuleList(newModuleList);
-    // };
-
-
     //const modulesList = modules.filter((module) => module.course === courseId);
     const [selectedModule, setSelectedModule] = useState(moduleList[0]);
     let count = 0;

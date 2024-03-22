@@ -105,10 +105,10 @@ function Assignments() {
                                             <Modal.Body>Do you want to delete the assignment!</Modal.Body>
                                             <Modal.Footer>
                                                 <button className="btn btn-secondary" onClick={handleClose}>
-                                                    Close
+                                                    Cancel
                                                 </button>
                                                 <button className="btn btn-secondary" onClick={handleDelete}>
-                                                    Save Changes
+                                                    Delete
                                                 </button>
                                             </Modal.Footer>
                                         </Modal>

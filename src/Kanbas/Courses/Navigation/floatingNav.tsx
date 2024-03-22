@@ -1,4 +1,9 @@
+import { FaArrowDown, FaBars } from "react-icons/fa";
+import { Link, useParams } from "react-router-dom";
+
 function FloatingNav() {
+
+    const courseId = useParams();
 
     return (
         <>
@@ -8,7 +13,7 @@ function FloatingNav() {
                         <button className="btn btn-dark" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseWidthExample" aria-expanded="true"
                             aria-controls="collapseWidthExample">
-                            <i className="fa-solid fa-bars" style={{ color: '#b52828' }}></i>
+                                <FaBars style={{ color: '#b52828' }}/>
                         </button>
                     </div>
                 </div>
@@ -26,23 +31,22 @@ function FloatingNav() {
                         <li>
                             <a href="/Kanbas/Account/Profile/screen.html"
                                 style={{ color: '#b52828', fontSize: '20px', textDecoration: 'none' }}><i className="fa fa-user-o"
-                                    style={{ paddingRight: '20px' }}></i>Account</a>
+                                    style={{ paddingRight: '20px' }}></i>Account
+                            </a>
                         </li>
-                        {/* Other list items */}
                     </div>
                 </div>
             </div>
 
             <span style={{ position: 'relative', textAlign: 'center', color: 'white', zIndex: 1 }}>CS5610.MERGED.202430
-                <p style={{ marginBottom: '0' }}>Assignments</p>
+                <p style={{ marginBottom: '0' }}></p>
             </span>
 
             <div style={{ position: 'relative', zIndex: 2 }}>
                 <div style={{ float: 'left' }} className="d-flex">
                     <div>
                         <button className="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
-                            aria-controls="offcanvasTop"><i className="fa-solid fa-arrow-down"
-                                style={{ color: '#b52828' }}></i></button>
+                            aria-controls="offcanvasTop"><FaArrowDown style={{ color: '#b52828' }}/></button>
                     </div>
                 </div>
             </div>
@@ -56,8 +60,8 @@ function FloatingNav() {
                 </div>
                 <div className="offcanvas-body">
                     <li>
-                        <a href="/Kanbas/Courses/Home/screen.html"
-                            style={{ color: '#b52828', fontSize: '20px', textDecoration: 'none' }}>Home</a>
+                        <Link to="/Kanbas/Courses/Home/screen.html"
+                            style={{ color: '#b52828', fontSize: '20px', textDecoration: 'none' }}>Home</Link>
                     </li>
                     <li>
                         <a href="#" style={{color: "#b52828", fontSize: "20px", textDecoration: "none"}}>Modules</a>
@@ -69,15 +73,15 @@ function FloatingNav() {
                         <a href="#" style={{color: "#b52828", fontSize: "20px", textDecoration: "none"}}>Zoom Meetings</a>
                     </li>
                     <li>
-                        <a href="/Kanbas/Courses/Assignments/screen.html"
-                            style={{color: "#b52828", fontSize: "20px", textDecoration: "none"}}>Assignments</a>
+                        <Link to={`/Kanbas/Courses/${courseId}/Assignments`}
+                            style={{color: "#b52828", fontSize: "20px", textDecoration: "none"}}>Assignments</Link>
                     </li>
                     <li>
                         <a href="#" style={{color: "#b52828", fontSize: "20px", textDecoration: "none"}}>Quizes</a>
                     </li>
                     <li>
-                        <a href="/Kanbas/Courses/Grades/screen.html"
-                            style={{color: "#b52828", fontSize: "20px", textDecoration: "none"}}>Grades</a>
+                        <Link to="/Kanbas/Courses/Grades/screen.html"
+                            style={{color: "#b52828", fontSize: "20px", textDecoration: "none"}}>Grades</Link>
                     </li>
                     <li>
                         <a href="#" style={{color: "#b52828", fontSize: "20px", textDecoration: "none"}}>People</a>
